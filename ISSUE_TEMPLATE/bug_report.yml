@@ -1,0 +1,61 @@
+name: Bug report
+description: Report incorrect behavior in a Bomly project
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug.
+
+        Do not report security vulnerabilities here. Use the affected repository's Security tab for private vulnerability reporting.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which Bomly project is affected?
+      options:
+        - Bomly CLI
+        - Bomly Guard
+        - Plugin example
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+      placeholder: Running `bomly scan` on a Go module reported no dependencies, but go.mod has several.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Include exact commands, a minimal public repo and ref, or a workflow snippet when relevant.
+      placeholder: |
+        1. `git clone https://github.com/example/repo && cd repo`
+        2. `bomly scan --json`
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Version and environment
+      description: Include Bomly version, action ref, plugin version, OS/arch, and any relevant runtime versions.
+      placeholder: |
+        bomly v0.13.0
+        bomly-guard@v1
+        macOS 14.5 arm64
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste relevant output or logs. Scrub secrets, tokens, and private data.
+      render: shell
+    validations:
+      required: false

@@ -1,0 +1,39 @@
+name: Documentation issue
+description: Report missing, confusing, or incorrect Bomly documentation
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which docs are affected?
+      options:
+        - Bomly CLI docs
+        - Bomly Guard docs
+        - Plugin docs
+        - Website docs
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      description: Link to the page or path to the file.
+      placeholder: https://bomly.dev/docs/getting-started
+    validations:
+      required: false
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs to change?
+      description: Describe what is missing, confusing, stale, or incorrect.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording or fix
+      description: Share a proposed fix if you have one.
+    validations:
+      required: false
