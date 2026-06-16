@@ -1,0 +1,21 @@
+<svg width="260" height="112" viewBox="0 0 260 112" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bomly">
+  <title>Bomly</title>
+  <style>
+    .wm { fill: #0D0D0D; font-family: "JetBrains Mono", "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace; font-weight: 700; }
+    .sub { fill: #4A423A; font-family: "JetBrains Mono", "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      .wm { fill: #F2EFE9; }
+      .sub { fill: #D6CFC5; }
+    }
+  </style>
+
+  <g transform="translate(10 16)">
+    <rect x="0" y="0" width="80" height="80" rx="18" fill="#E89B5C"/>
+    <path d="M40 16 C47 21 55 24 64 26 V39 C64 54 55 66 40 72 C25 66 16 54 16 39 V26 C25 24 33 21 40 16 Z" fill="none" stroke="#0D0D0D" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M28 33 L38 43 L28 53" fill="none" stroke="#0D0D0D" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+    <rect x="44" y="49" width="12" height="5" fill="#0D0D0D"/>
+  </g>
+
+  <text class="wm" x="112" y="55" font-size="40">Bomly</text>
+  <text class="sub" x="114" y="84" font-size="19">open source</text>
+</svg>
