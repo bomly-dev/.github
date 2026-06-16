@@ -1,7 +1,7 @@
 # Bomly
 
 <p align="center">
-  <img src="bomly-wordmark.svg" alt="Bomly" width="260">
+  <img src="bomly-wordmark.svg" alt="Bomly" width="310">
 </p>
 
 Bomly builds open source tools for understanding dependency risk before it
